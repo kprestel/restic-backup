@@ -1,0 +1,8 @@
+[Unit]
+Description=Backup service powered by restic
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

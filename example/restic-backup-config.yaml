@@ -1,0 +1,31 @@
+restic_path: /usr/bin/restic
+backup:
+  one_file_system: true
+  tags:
+    - base
+    - personal
+  directories:
+    - /home/kp/Documents
+    - /home/kp/workspace
+  exclude:
+    - "*.pyc"
+  exclude_file:
+
+# remove old backups
+# not available if your REST server is in append only mode
+forget:
+  enabled: false
+  keep:
+    last: 5
+    hourly: 8
+    daily: 7
+    weekly: 4
+    montly: 6
+    yearly: 1
+email:
+  enabled: true
+  to:
+    - kprestel@gmail.com
+  from: kprestel9@gmail.com
+  on_sucess: true
+  on_failure: true

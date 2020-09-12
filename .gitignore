@@ -1,0 +1,10 @@
+.idea
+.vscode
+.mypy_cache
+.venv
+.python-version
+*.log
+*.pyc
+__pycache__
+
+*.egg-info
